@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "DLチャンネルトークウォッチャ",
+    "version": "0.1",
+    "author": "Tachibana446",
+    "description": "トークの更新をお知らせします。",
+    "permissions": ["tabs", "storage", "*://ch.dlsite.com/*"],
+    "content_scripts": [{
+        "matches": ["*://ch.dlsite.com/talk"],
+        "js": ["jquery.min.js", "content.js"]
+    }]
+}
